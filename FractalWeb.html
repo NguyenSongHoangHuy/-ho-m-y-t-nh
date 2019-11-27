@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="Fractal.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div style="position:absolute;right:1em;min-width:12em">
+      <!-- AddThis Button BEGIN -->
+      <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        <div class="atclear"></div>
+      </div>
+      <!-- AddThis Button END -->
+    </div>
+    <div>
+      <!-- <div class="examples">
+        <div class="examples-title">Examples</div>
+        <div class="ex-left">
+          <img
+            onclick="example(0)"
+            src="images/heighway_dragon.png"
+            title="Heighway Dragon"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(2)"
+            src="images/kevs_tree.png"
+            title="Kevs Tree"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(3)"
+            src="images/kevs_wispy_tree.png"
+            title="Kevs Wispy Tree"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(4)"
+            src="images/kevs_pond_weed.png"
+            title="Kevs Pond Weed"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(8)"
+            src="images/fractal_plant.png"
+            title="Fractal Plant"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(1)"
+            src="images/koch_curve.png"
+            title="Koch Curve"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(5)"
+            src="images/sip_triangle_curves.png"
+            title="Sierpinski triangle (curves)"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(6)"
+            src="images/sip_triangle_triangles.png"
+            title="Sierpinski triangle (triangles)"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(7)"
+            src="images/dragon_curve.png"
+            title="Dragon Curve"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(9)"
+            src="images/koch_snowflake.png"
+            title="Koch Snowflake"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(10)"
+            src="images/pleasant_error.png"
+            title="Pleasant Error"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(11)"
+            src="images/sierpinski_carpet.png"
+            title="Sierpinski's Carpet"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(12)"
+            src="images/space_filling_curve.png"
+            title="Space Filling Curve"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(13)"
+            src="images/sierpinski_median_curve.png"
+            title="Sierpinski Median Curve"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(14)"
+            src="images/lace.png"
+            title="Lace"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-right">
+          <img
+            onclick="example(15)"
+            src="images/joined_cross_curves.png"
+            title="Joined Cross Curves"
+            width="120"
+            height="120"
+            class="example"
+          />
+        </div>
+        <div class="ex-left">
+          <img
+            onclick="example(16)"
+            src="images/penrose_tiling.png"
+            titliling"
+            width="120"e="Penrose T
+            height="120"
+            class="example"
+          />
+        </div>
+      </div> -->
+
+      <div id="lsystems" style="width: 512px; float: left;">
+        <div>
+          <table border="0" cellspacing="1" cellpadding="1">
+            <tbody>
+              <tr>
+                <td><span>Iterations:</span></td>
+                <td>
+                  <input id="iterations" type="text" style="width:4em" />
+                  <!-- <div style="display:inline">
+                    <input id="linewidths" type="checkbox" />
+                    <label for="linewidths">Auto Line Width</label>
+                  </div> -->
+                </td>
+              </tr>
+              <!-- <tr>
+                <td><span>Angle:</span></td>
+                <td>
+                  <input id="angle" type="text" value="" style="width:4em" />
+                </td>
+              </tr>
+              <tr>
+                <td><span>Constants:</span></td>
+                <td>
+                  <input
+                    id="constants"
+                    type="text"
+                    value=""
+                    style="width:12em"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><span>Axoim:</span></td>
+                <td>
+                  <input id="axiom" type="text" value="" style="width:12em" />
+                </td>
+              </tr>
+              <tr>
+                <td><span>Rule1:</span></td>
+                <td>
+                  <input id="rule1" type="text" value="" style="width:30em" />
+                </td>
+              </tr>
+              <tr>
+                <td><span>Rule2:</span></td>
+                <td>
+                  <input id="rule2" type="text" value="" style="width:30em" />
+                </td>
+              </tr>
+              <tr>
+                <td><span>Rule3:</span></td>
+                <td>
+                  <input id="rule3" type="text" value="" style="width:30em" />
+                </td>
+              </tr>
+              <tr>
+                <td><span>Rule4:</span></td>
+                <td>
+                  <input id="rule4" type="text" value="" style="width:30em" />
+                </td>
+              </tr>
+              <tr>
+                <td><span>Rule5:</span></td>
+                <td>
+                  <input id="rule5" type="text" value="" style="width:30em" />
+                </td>
+              </tr> -->
+              <tr>
+                <td colspan="2">
+                  <input
+                    id="start"
+                    type="button"
+                    value="Start"
+                    onclick="SierpinskiTriangle([-0.8, 1, -0.8, -1, Math.sqrt(3) - 0.8, 0,], 
+                    getRepeatValue())"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="status" style="padding:4px;font-family:courier new">
+          Finished rendering in 87ms.
+        </div>
+
+        <div>
+          <canvas id="my_Canvas" width="512" height="512"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="_atssh"
+      style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"
+    >
+      <iframe
+        id="_atssh64"
+        title="AddThis utility frame"
+        style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;"
+        src="https://s7.addthis.com/static/sh.f48a1a04fe8dbf021b4cda1d.html#rand=0.3420373593179378&amp;iit=1574844289537&amp;tmr=load%3D1574844285787%26core%3D1574844285835%26main%3D1574844289523%26ifr%3D1574844289548&amp;cb=0&amp;cdn=0&amp;md=0&amp;kw=&amp;ab=-&amp;dh=kevs3d.co.uk&amp;dr=https%3A%2F%2Fl.facebook.com%2F&amp;du=http%3A%2F%2Fkevs3d.co.uk%2Fdev%2Flsystems%2F%3Ffbclid%3DIwAR1irXJ36qmedsDVVBDcGgoZhGdGV1Q8Si_54MVJR_xNHYiP-4nvWyrt-YQ%23&amp;href=http%3A%2F%2Fkevs3d.co.uk%2Fdev%2Flsystems%2F&amp;dt=L-Systems%20Turtle%20Graphics%20Renderer%20-%20HTML5%20Canvas%20-%20by%20Kevin%20Roast&amp;dbg=0&amp;cap=tc%3D0%26ab%3D0&amp;inst=1&amp;jsl=0&amp;prod=undefined&amp;lng=vi&amp;ogt=&amp;pc=men&amp;pub=xa-4e4813104686cad8&amp;ssl=0&amp;sid=5dde377d549db886&amp;srf=0.01&amp;ver=300&amp;xck=0&amp;xtr=0&amp;og=&amp;csi=undefined&amp;rev=v8.28.1-wp&amp;ct=1&amp;xld=1&amp;xd=1"
+      ></iframe>
+    </div>
+    <style id="service-icons-0"></style>
+    <script src="Fractal.js"></script>
+    <script src="Sierpinski.js"></script>
+  </body>
+</html>

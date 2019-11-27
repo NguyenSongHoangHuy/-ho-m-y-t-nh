@@ -1,0 +1,57 @@
+body {
+  background-color: #ddd;
+  font-family: GeezaPro, Arial, Helvetica;
+  color: darkblue;
+  font-size: 0.9em;
+}
+a,
+a:visited,
+a:active,
+a:hover {
+  color: #000044;
+}
+.example {
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  -moz-box-shadow: 3px 3px 4px #444;
+  -webkit-box-shadow: 3px 3px 4px #444;
+  box-shadow: 3px 3px 4px #444;
+}
+.examples-title {
+  height: 24px;
+  text-align: center;
+}
+.examples {
+  float: right;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 18px;
+  padding-top: 42px;
+  xborder: 1px solid darkgrey;
+}
+.ex-left {
+  float: left;
+  padding-right: 6px;
+}
+.ex-right {
+  width: 250px;
+  margin-bottom: 2px;
+}
+canvas {
+  background-color: white;
+  border: 1px solid grey;
+  -moz-box-shadow: 3px 3px 6px #444;
+  -webkit-box-shadow: 3px 3px 6px #444;
+  box-shadow: 3px 3px 6px #444;
+}
+input[type="text"] {
+  border: none;
+  -moz-box-shadow: inset 2px 2px 5px #888;
+  -webkit-box-shadow: inset 2px 2px 5px #888;
+  box-shadow: inset 2px 2px 5px #888;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 1px;
+  padding: 5px;
+}
