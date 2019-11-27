@@ -200,6 +200,16 @@
                   </div> -->
                 </td>
               </tr>
+              <tr>
+                <td><span>Type:</span></td>
+                <td>
+                  <select class="box" id="drawtype">
+                    <option value="1">Sierpinski</option>
+                    <option value="2">Saab</option>
+                  </select>
+                </td>
+              </tr>
+
               <!-- <tr>
                 <td><span>Angle:</span></td>
                 <td>
@@ -259,8 +269,7 @@
                     id="start"
                     type="button"
                     value="Start"
-                    onclick="SierpinskiTriangle([-0.8, 1, -0.8, -1, Math.sqrt(3) - 0.8, 0,], 
-                    getRepeatValue())"
+                    onclick="Draw(getRepeatValue(), getDrawType())"
                   />
                 </td>
               </tr>
@@ -290,7 +299,7 @@
       ></iframe>
     </div>
     <style id="service-icons-0"></style>
-    <script src="Fractal.js"></script>
-    <script src="Sierpinski.js"></script>
+    <script type="text/javascript" src="Fractal.js"></script>
+    <script type="text/javascript" src="Sierpinski.js"></script>
   </body>
 </html>
